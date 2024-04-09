@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: 06be881f9232a2f41b5f2cf7eb64672c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _blendShapeFrameWeight:
+    _option: 0
+    _multiplier: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _enableGpuInstancing: 0
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {instanceID: 0}
+  textures:
+  - {instanceID: 0}
+  hasSceneData: 1
+  hasAnimationData: 1
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations:
+  - name: Channel_Wndup
+  - name: Crit
+  - name: Death
+  - name: Idle1_Base
+  - name: Joke_Loop
+  - name: Laugh
+  - name: darius_skin15_run
+  - name: Spell1
+  - name: Spell2
+  - name: Spell3
+  - name: Taunt
+  - name: Recall
+  - name: Idle2_Base
+  - name: Spell2_Idle
+  - name: Spell2_Run
+  - name: Dance
+  - name: Channel
+  - name: darius_skin15_spell1_in
+  - name: Spell3_ToRun
+  - name: Spell3_ToIdle
+  - name: Spell1_ToIdle
+  - name: Spell2_ActivateIdle
+  - name: Spell2_ActivateRun
+  - name: darius_skin15_spell1_in_run
+  - name: Spell4
+  - name: Spell2_IdleIn
+  - name: Spell4_ToRun
+  - name: Idle_In
+  - name: Run_Homeguard
+  - name: Run_Fast
+  - name: Run_Homeguard_IdleIn
+  - name: Run_Homeguard_RunIn
+  - name: Respawn
+  - name: Dance_In
+  - name: darius_skin15_joke_intro
+  - name: Recall_Winddown
+  - name: Crit_ToIdle
+  - name: Spell2_IdleIn2
+  - name: Spell2_Deactivate
+  - name: darius_skin15_spell2_deactivate
+  _extensions:
+  - name: KHR_materials_unlit
+    supported: 1
+    used: 1
+    required: 0
+  - name: KHR_texture_transform
+    supported: 1
+    used: 1
+    required: 0
+  _textures:
+  - texture: {instanceID: 0}
+    shouldBeLinear: 0
+    shouldBeNormalMap: 0
+  _mainAssetIdentifier: scenes/AuxScene
+  _importPlugins: []
