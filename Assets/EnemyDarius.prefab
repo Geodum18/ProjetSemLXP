@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 447873836980808763}
   m_Layer: 0
   m_Name: Cone
-  m_TagString: Detection Cone
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,8 +420,8 @@ Transform:
   m_GameObject: {fileID: 201993245214194887}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -230, y: 0, z: 701}
-  m_LocalScale: {x: 500, y: 700, z: 1}
+  m_LocalPosition: {x: -2.31, y: 0, z: 7.5}
+  m_LocalScale: {x: 5, y: 7, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1040343065706316836}
@@ -5689,7 +5689,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2305362433413076342}
@@ -6276,7 +6276,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 21.799904, y: 0, z: 8.795118}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7731046493600320168}
@@ -6320,6 +6320,7 @@ MonoBehaviour:
   hpAmount: 0
   agent: {fileID: 0}
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!195 &193085855274096237
 NavMeshAgent:
   m_ObjectHideFlags: 0

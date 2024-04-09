@@ -58,4 +58,13 @@ public class Movementwithanim : MonoBehaviour
         // Apply movement to the object
         transform.Translate(movement);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("Collision"+ collision.gameObject.name);
+
+        if(collision.gameObject.tag== "Enemy"){
+            this.transform.position = Vector3.zero;
+        }
+    }
 }
