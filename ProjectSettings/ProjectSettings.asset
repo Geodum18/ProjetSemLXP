@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 020d5095ffb1e7344a7613d7941fdb4a
+  productGUID: 2b5ca870966bb324982b40d2e6b027bc
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Project LXP
+  productName: LXP
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -676,14 +676,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Project LXP
+  metroPackageName: LXP
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Project LXP
+  metroApplicationDescription: LXP
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -753,11 +753,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: d87e03ec-7368-478e-bad8-181666465cc1
+  cloudProjectId: 5aa81274-ea61-4fe1-a200-37dad115d800
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Project LXP
-  organizationId: g_eodumuwu
+  projectName: LXP
+  organizationId: valgebo
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
