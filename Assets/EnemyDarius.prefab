@@ -403,6 +403,7 @@ GameObject:
   - component: {fileID: 3112807817285957599}
   - component: {fileID: 2435294266293795110}
   - component: {fileID: 7033487056891757387}
+  - component: {fileID: 447873836980808763}
   m_Layer: 0
   m_Name: Cone
   m_TagString: Detection Cone
@@ -419,8 +420,8 @@ Transform:
   m_GameObject: {fileID: 201993245214194887}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -189, y: 0, z: 618}
-  m_LocalScale: {x: 400, y: 600, z: 1}
+  m_LocalPosition: {x: -230, y: 0, z: 701}
+  m_LocalScale: {x: 500, y: 700, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1040343065706316836}
@@ -978,6 +979,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.73523474, y: 0.2641996, z: 1.0000004}
   m_Center: {x: 0.49391532, y: 0.40272638, z: 0.5000001}
+--- !u!65 &447873836980808763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201993245214194887}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4713993, y: 0.46842104, z: 1.0000004}
+  m_Center: {x: 0.49293423, y: 0.7657906, z: 0.5000001}
 --- !u!1 &206282737640102149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4046,7 +4068,7 @@ Transform:
   m_GameObject: {fileID: 5242516858901607857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.1888, y: -124.331894, z: -86.05795}
+  m_LocalPosition: {x: -16, y: -124.331894, z: -86.05795}
   m_LocalScale: {x: 0.022048451, y: 0.022048451, z: 0.022048451}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6235,6 +6257,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1040343065706316836}
   - component: {fileID: 5791094742647752111}
+  - component: {fileID: 8461201989751278114}
+  - component: {fileID: 193085855274096237}
   m_Layer: 0
   m_Name: EnemyDarius
   m_TagString: Untagged
@@ -6281,6 +6305,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8461201989751278114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8684765867337747138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a020037f479143c586fc72999ae13af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpAmount: 0
+  agent: {fileID: 0}
+  player: {fileID: 0}
+--- !u!195 &193085855274096237
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8684765867337747138}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &8687066485547022449
 GameObject:
   m_ObjectHideFlags: 0

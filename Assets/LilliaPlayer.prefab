@@ -3499,7 +3499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   turnSpeed: 80
-  bulletPrefab: {fileID: 5546881815152787292, guid: e1c313e0fa02a5845ab6e916b129737e, type: 3}
+  bulletPrefab: {fileID: 3789771802216811603}
 --- !u!54 &8133597750482853105
 Rigidbody:
   m_ObjectHideFlags: 0
