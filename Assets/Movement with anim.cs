@@ -13,6 +13,7 @@ public class Movementwithanim : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        this.transform.position = new Vector3(0, 1, 0);
     }
 
     void Update()
@@ -46,7 +47,7 @@ public class Movementwithanim : MonoBehaviour
             //spawn de balle
             animator.SetTrigger("CastSpell");
             
-            Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
+            Instantiate(bulletPrefab, this.transform.position+1*Vector3.forward, this.transform.rotation);
             
         }
 
@@ -59,12 +60,12 @@ public class Movementwithanim : MonoBehaviour
         transform.Translate(movement);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         print("Collision"+ collision.gameObject.name);
 
         if(collision.gameObject.tag== "Enemy"){
-            this.transform.position = Vector3.zero;
+            this.transform.position = new Vector3(0, this.transform.position.y, 0);
         }
     }
 }

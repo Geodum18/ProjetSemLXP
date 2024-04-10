@@ -3439,9 +3439,10 @@ GameObject:
   - component: {fileID: 109886893349603721}
   - component: {fileID: 1208283437432993661}
   - component: {fileID: 5059467013381574783}
-  - component: {fileID: 8133597750482853105}
+  - component: {fileID: -4150954385505301619}
+  - component: {fileID: 3529642939825621566}
   m_Layer: 0
-  m_Name: LilliaPlayer
+  m_Name: LilliaBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3500,33 +3501,42 @@ MonoBehaviour:
   moveSpeed: 3
   turnSpeed: 80
   bulletPrefab: {fileID: 3789771802216811603}
---- !u!54 &8133597750482853105
-Rigidbody:
+--- !u!114 &-4150954385505301619
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3789771802216811603}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f31e7f1474ea7142842de1ea012cd5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!136 &3529642939825621566
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789771802216811603}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3908430448187441816
 GameObject:
   m_ObjectHideFlags: 0
@@ -7848,7 +7858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1176220069272452293}
   - component: {fileID: 7505450700052155325}
-  - component: {fileID: 7001733139046539909}
+  - component: {fileID: 3687853764735069482}
   m_Layer: 0
   m_Name: mesh_0_1
   m_TagString: Untagged
@@ -8155,7 +8165,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -47.08908, y: -16.771427, z: 42.635143}
     m_Extent: {x: 94.99039, y: 99.57562, z: 58.88383}
   m_DirtyAABB: 0
---- !u!136 &7001733139046539909
+--- !u!136 &3687853764735069482
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8174,10 +8184,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10160.204
-  m_Height: 19787.342
+  m_Radius: 4000
+  m_Height: 19959.475
   m_Direction: 1
-  m_Center: {x: -12568.87, y: 6496.9707, z: 5024.259}
+  m_Center: {x: -12312.144, y: 206.46606, z: 4404.1934}
 --- !u!1 &9060302166810832108
 GameObject:
   m_ObjectHideFlags: 0
