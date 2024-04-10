@@ -8,9 +8,11 @@ public class EnnemyController : MonoBehaviour
     public int hpAmount;
     public NavMeshAgent agent;
     public GameObject player;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         agent = this.GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
 
@@ -19,6 +21,7 @@ public class EnnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetBool("IsRunning", true);
         agent.SetDestination(player.transform.position);
     }
 

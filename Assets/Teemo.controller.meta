@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Teemo.controller.meta
 guid: 17a7bb63c6c9a444d81723990120701e
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 9100000
-========
-guid: 9b5003fd71bfaf14cac621b3a83165e8
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 23800000
->>>>>>>> decor:Assets/testfix/NavMesh-Plane.asset.meta
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -403,9 +403,10 @@ GameObject:
   - component: {fileID: 3112807817285957599}
   - component: {fileID: 2435294266293795110}
   - component: {fileID: 7033487056891757387}
+  - component: {fileID: 447873836980808763}
   m_Layer: 0
   m_Name: Cone
-  m_TagString: Detection Cone
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,8 +420,8 @@ Transform:
   m_GameObject: {fileID: 201993245214194887}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -189, y: 0, z: 618}
-  m_LocalScale: {x: 400, y: 600, z: 1}
+  m_LocalPosition: {x: -2.31, y: 0.31, z: 7.5}
+  m_LocalScale: {x: 5, y: 7, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1040343065706316836}
@@ -955,7 +956,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.27214164, z: 1.0000004}
+  m_Size: {x: 1, y: 0.27214164, z: 20}
   m_Center: {x: 0.5, y: 0.13607071, z: 0.5000001}
 --- !u!65 &7033487056891757387
 BoxCollider:
@@ -976,8 +977,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.73523474, y: 0.2641996, z: 1.0000004}
+  m_Size: {x: 0.73523474, y: 0.2641996, z: 20}
   m_Center: {x: 0.49391532, y: 0.40272638, z: 0.5000001}
+--- !u!65 &447873836980808763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201993245214194887}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4713993, y: 0.46842104, z: 20}
+  m_Center: {x: 0.49293423, y: 0.7657906, z: 0.5000001}
 --- !u!1 &206282737640102149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4046,7 +4068,7 @@ Transform:
   m_GameObject: {fileID: 5242516858901607857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86.1888, y: -124.331894, z: -86.05795}
+  m_LocalPosition: {x: -16, y: -124.331894, z: -86.05795}
   m_LocalScale: {x: 0.022048451, y: 0.022048451, z: 0.022048451}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5667,7 +5689,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2305362433413076342}
@@ -6235,8 +6257,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1040343065706316836}
   - component: {fileID: 5791094742647752111}
-  - component: {fileID: 1623625892285577390}
-  - component: {fileID: 5558918258739072411}
+  - component: {fileID: 8461201989751278114}
+  - component: {fileID: 193085855274096237}
   m_Layer: 0
   m_Name: EnemyDarius
   m_TagString: Untagged
@@ -6254,7 +6276,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 21.799904, y: 0, z: 8.795118}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7731046493600320168}
@@ -6283,7 +6305,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1623625892285577390
+--- !u!114 &8461201989751278114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6297,8 +6319,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpAmount: 0
   agent: {fileID: 0}
-  player: {fileID: 3010293804689195085, guid: 9ec17fccbf93f4de3aed7812825675f7, type: 3}
---- !u!195 &5558918258739072411
+  player: {fileID: 0}
+  animator: {fileID: 0}
+--- !u!195 &193085855274096237
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
